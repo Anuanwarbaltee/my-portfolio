@@ -1,4 +1,5 @@
 import kamkaj from "../assets/kamkaj.jpg"
+import crmhub from "../assets/crmhub.jpg"
 
 const constantData = {
     name: "Muhammad Anwar",
@@ -53,29 +54,30 @@ const constantData = {
             company: "XTECSOFT Pvt Ltd",
             period: "2023 - 2025",
             description:
-                "Working as a core frontend developer on multiple enterprise-level projects including CRM hubs, merchant reporting tools, multi-hotel booking system, and document previewers.",
+                "Worked as a core frontend developer on multiple enterprise-level applications, including CRM platforms, merchant reporting systems, multi-hotel booking solutions, and advanced document preview tools.",
             highlights: [
-                "Developed large-scale CRM modules using React, Redux Thunk, and MUI",
-                "Implemented advanced document viewer supporting PDF, DOCX, TXT, Images",
-                // "Built multi-hotel booking UI with responsive layouts and clean UX",
-                "Optimized complex dashboards and improved performance by 35%",
-                "Worked closely with backend teams to integrate REST APIs"
+                "Developed large-scale CRM modules using React, Redux Thunk, and Material UI",
+                // "Implemented advanced document viewers supporting PDF, DOCX, TXT, and image files",
+                "Built data-driven dashboards with complex reports such as MSR and ticketing modules",
+                "Optimized application performance and improved dashboard efficiency by 35%",
+                "Collaborated closely with backend teams to integrate RESTful APIs"
             ],
         },
         {
-            title: "Junior Full Stack Developer",
-            company: "Digital Solutions Ltd.",
-            period: "2020 - 2022",
+            title: "MERN Stack Developer (Part-Time, Remote)",
+            company: "Remote ",
+            period: "2025 - Present",
             description:
-                "Developed responsive web applications using MERN stack. Contributed to API integrations, UI development, and admin dashboards.",
+                "Currently working as a part-time remote MERN Stack Developer, building full-stack web applications with a focus on scalable APIs, modern frontend interfaces, and efficient database design.",
             highlights: [
-                "Built user dashboards with React, Node.js, and MongoDB",
-                "Created reusable UI components and improved maintainability",
-                "Integrated multiple third-party services and API endpoints",
-                "Reduced UI bugs by 30% through testing and refactoring"
+                "Developing full-stack applications using React, Node.js, Express.js, and MongoDB",
+                "Designing and integrating REST APIs with secure authentication and authorization",
+                "Implementing reusable frontend components and state management",
+                "Working remotely with clients to deliver scalable and maintainable solutions"
             ],
-        },
+        }
     ],
+
 
     //  Updated Skills 
     skills: [
@@ -146,29 +148,21 @@ const constantData = {
             image: kamkaj,
         },
         {
-            title: "Task Management App",
+            title: "CRM Hub Platform",
             description:
-                "Collaborative project management tool with real-time updates, team chat, and file sharing capabilities.",
-            technologies: ["Next.js", "TypeScript", "PostgreSQL", "WebSocket"],
-            liveUrl: "#",
-            githubUrl: "#",
-        },
-        {
-            title: "AI Content Generator",
-            description:
-                "AI-powered content generation platform using OpenAI API for creating marketing copy and blog posts.",
-            technologies: ["React", "Python", "FastAPI", "OpenAI"],
-            liveUrl: "#",
-            githubUrl: "#",
-        },
-        {
-            title: "Social Media Dashboard",
-            description:
-                "Analytics dashboard for managing multiple social media accounts with scheduled posting and insights.",
-            technologies: ["Vue.js", "Express", "Redis", "Chart.js"],
-            liveUrl: "#",
-            githubUrl: "#",
-        },
+                "A centralized CRM platform designed to manage customers, leads, and business data through dashboards, analytics, and intuitive user interfaces.",
+            technologies: [
+                "React.js",
+                "Redux",
+                "Material UI",
+                "Charts",
+            ],
+            liveUrl: "https://crm-hub.azurewebsites.net/",
+            githubUrl: null,
+            image: crmhub,
+        }
+        ,
+
     ],
 };
 
