@@ -1,5 +1,6 @@
 import kamkaj from "../assets/kamkaj.jpg"
 import crmhub from "../assets/crmhub.jpg"
+import videoAppImg from "../assets/video-app.jpg"
 
 const constantData = {
     name: "Muhammad Anwar",
@@ -132,6 +133,27 @@ const constantData = {
 
     //  Projects (kept same) 
     projects: [
+        {
+            title: "Video Streaming Platform",
+            description:
+                "A full-stack video streaming application with authentication, likes, comments, subscriptions, and playlists. Built using MERN stack with modern UI and REST APIs.",
+            technologies: [
+                "React",
+                "Material UI",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "JWT Authentication",
+                "REST API"
+            ],
+            liveUrl: "https://video-app-client-nu.vercel.app/",
+            github: {
+                frontend: "https://github.com/Anuanwarbaltee/video-app-client",
+                backend: "https://github.com/Anuanwarbaltee/video-streaming-app"
+            },
+            image: videoAppImg
+        },
+
         {
             title: "Home Services Marketplace Platform",
             description:

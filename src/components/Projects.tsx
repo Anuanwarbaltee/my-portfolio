@@ -21,7 +21,7 @@ export function Projects() {
                   <img
                     src={project?.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-48  group-hover:scale-110 transition-transform duration-300"
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -33,12 +33,20 @@ export function Projects() {
                       </a>
                     </Button>
 
-                    {project.githubUrl && (
-                      <Button variant="outline" size="sm" asChild>
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-4 w-4" />
-                        </a>
-                      </Button>
+                    {project.github && (
+                      <>
+                        <Button variant="outline" size="sm" asChild title="Backend">
+                          <a href={project.github.backend} target="_blank" rel="noopener noreferrer">
+                            <Github className="h-4 w-4" />
+                          </a>
+                        </Button>
+                        <Button variant="outline" size="sm" asChild title="Frontend">
+                          <a href={project.github.frontend} target="_blank" rel="noopener noreferrer">
+                            <Github className="h-4 w-4" />
+                          </a>
+                        </Button>
+
+                      </>
                     )}
                   </div>
                 </div>

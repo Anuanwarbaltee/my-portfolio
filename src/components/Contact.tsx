@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import constantData from '@/constant/constant.ts'
+import emailjs from '@emailjs/browser';
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -14,29 +15,52 @@ export function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Basic validation
-    if (!formData.name || !formData.email || !formData.message) {
+
+
+    try {
+      if (!formData.name || !formData.email || !formData.message) {
+        toast({
+          title: "Error",
+          description: "Please fill in all fields",
+          variant: "destructive",
+        });
+      } else {
+
+
+        await emailjs.send(
+          "service_klxdcdi",
+          "template_3kglbhp",
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            message: formData.message,
+            to_name: "Muhammad Anwar",
+          },
+          "oeoBWer0W5Jch4Puu"
+        );
+
+        toast({
+          title: "Success",
+          description: "Thank you! I'll get back to you within 24 hours.",
+          variant: "destructive",
+        });
+        // toast.success("Thank you! We'll get back to you within 24 hours.");
+        setFormData({ name: "", email: "", message: "" });
+      }
+    } catch (error) {
+      console.error("EmailJS error:", error);
       toast({
         title: "Error",
-        description: "Please fill in all fields",
+        description: "Something went wrong. Please email directly at anwardines786@gmail.com",
         variant: "destructive",
       });
-      return;
+    } finally {
     }
 
-    // In production, send email or save to database
-    console.log("Form submitted:", formData);
-
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
-
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
