@@ -1,6 +1,7 @@
 import kamkaj from "../assets/kamkaj.jpg"
 import crmhub from "../assets/crmhub.jpg"
 import videoAppImg from "../assets/video-app.jpg"
+import localGuideImg from "../assets/local-bg.jpg"
 
 const constantData = {
     name: "Muhammad Anwar",
@@ -134,21 +135,7 @@ const constantData = {
 
     //  Projects (kept same) 
     projects: [
-        {
-            title: "Local Guide Platform",
-            description:
-                "A local guide platform built with Next.js and Tailwind CSS, offering users a seamless experience to discover and explore local attractions, restaurants, and events. The platform features a modern UI, responsive design, and PWA capabilities for offline access.",
-            technologies: [
-                "Next.js",
-                "Tailwind CSS",
-                "PWA",
-                "Sanity CMS",
 
-
-            ],
-            liveUrl: "https://local-guide-4rqy.vercel.app/",
-
-        },
         {
             title: "Video Streaming Platform",
             description:
@@ -200,6 +187,21 @@ const constantData = {
             image: crmhub,
         }
         ,
+        {
+            title: "Local Guide Platform",
+            description:
+                "A local guide platform built with Next.js and Tailwind CSS, offering users a seamless experience to discover and explore local attractions, restaurants, and events. The platform features a modern UI, responsive design, and PWA capabilities for offline access.",
+            technologies: [
+                "Next.js",
+                "Tailwind CSS",
+                "PWA",
+                "Sanity CMS",
+
+
+            ],
+            liveUrl: "https://local-guide-4rqy.vercel.app/",
+            image: localGuideImg
+        },
 
     ],
 };
